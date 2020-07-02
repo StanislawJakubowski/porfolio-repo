@@ -1,0 +1,4 @@
+.item0 {
+    grid-area: header;
+    position: sticky;
+}
