@@ -2,4 +2,5 @@
 @import "~font-awesome/css/font-awesome.min.css";
 html {
     font-size: 1.2vw;
+    box-sizing: border-box;
   }
