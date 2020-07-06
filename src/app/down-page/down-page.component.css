@@ -1,22 +1,52 @@
+@media only screen and (max-width: 2000px) {
+    .container-size {
+       padding-left: 10%;
+       padding-right: 10%;
+    }
+
+    .popup-size{
+        width		: 20%; 
+        height		: 15%; 
+        top		    : 20%;
+        left		: 40%;
+    }
+ }
+ 
+ @media only screen and (max-width: 600px) {
+    .container-size {
+       padding-left: 5%;
+       padding-right: 5%;
+    }
+    
+    .popup-size{
+        width		: 40%; 
+        height		: 12%; 
+        top		    : 20%;
+        left		: 30%;
+
+    }
+ }
+
+
 .about-me{
      
     background: #F9FCFF;
-    padding: 7rem 0;
+    padding: 5rem 0;
     border-bottom: 1px solid rgb(185, 185, 252); 
 }
 
 .footer{
     text-align: center;
-    padding: 65px 10px;
+    padding: 3rem 3rem;
 }
 
 .about_me_container{
-    width: calc(100% - calc(2 * 7rem));
+    /* padding-left: 5%;
+    padding-right: 5%; */
     max-width: 120rem; 
 }
 
 .projects_container{
-    width: calc(100% - calc(2 * 7rem));
     max-width: 120rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -24,13 +54,11 @@
 }
 
 .project_last_container{
-    width: calc(100% - calc(2 * 7rem));
     max-width: 120rem;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
 }
 .project_title_container{
-    width: calc(100% - calc(2 * 7rem));
+   
     max-width: 120rem;
 }
 
@@ -76,39 +104,36 @@
 
 .h2-About{
     color: #353A47;
-    font-size: 2vw;
+    font-size: 1.6rem;
     font-weight: bold;
-    padding: 10px;
-}
-
-.h2_projects{
-    color: #353A47;
-    font-size: 2vw;
-    font-weight: bold;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .h3-About{
     color: #353A47;
-    font-size: 1.6vw;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 10px;
+    /* padding: 10px; */
 
 }
 
 .project-display{
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .project_display_image{
-    height: 10rem;
-    overflow: hidden;
-    margin-bottom: 0.7rem;
-    box-shadow: 0.5rem 0.8rem 1rem #888888;
+    margin-bottom: 2rem;
+     margin-top: 0.5rem;
+}
+.project_technologies{
+    margin: 0;
+    padding: 0;
 }
 .project_image{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    box-shadow: 0.5rem 0.8rem 1rem #888888;
 }
 
 .project-technogies{
@@ -132,10 +157,10 @@
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(min-content, 7rem) );
     grid-column-gap: 1rem;
-    grid-row-gap: 3rem;
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .actionI{
@@ -166,11 +191,7 @@ div.popup {
 	display 	: none;
     background	: white;
     color       : black;
-	width		: 20%; 
-	height		: 15%; 
 	position	: fixed;
-	top		    : 20%;
-	left		: 40%;
     z-index		: 4; 
     font-family: 'Roboto', sans-serif;
     text-align: center;
